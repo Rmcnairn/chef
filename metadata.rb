@@ -1,6 +1,6 @@
 name             'nginx'
 maintainer       'Dorsai'
-maintainer_email 'ross@dorsai.com'
+maintainer_email 'ross'
 license          'All rights reserved'
 description      'Standard Server Provisioning'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
