@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-   config.vm.box_url = "http://download.appscale.com/download/AppScale%201.12.0%20VirtualBox%20Image"
+  config.vm.box_url = "http://download.appscale.com/download/AppScale%201.12.0%20VirtualBox%20Image"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -25,8 +25,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # using a specific IP.
   # config.vm.network :private_network, ip: "192.168.33.10"
 
-  config.berkshelf.enabled = true
-  
+   config.berkshelf.enabled = true
+
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
@@ -90,6 +90,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # chef.data_bags_path = "../my-recipes/data_bags"
     # chef.add_recipe "mysql"
     # chef.add_role "web"
+
     chef.run_list = [
       "recipe[nginx]"
     ]
